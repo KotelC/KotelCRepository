@@ -1,0 +1,24 @@
+<!--<form method="post" action="./php/main.php">--> <!--Ta część skryput określa jaką metodą są przesyłane informacje oraz gdzie są składowane-->
+<div id="form">
+	<style>
+		input[name="name"] {
+			border-color: orange;
+		}
+	</style>
+	<p><input type="text" name="name" placeholder="Podaj swoje imię"/></p> <!--Ta część skryptu powoduje , że na stronie zostanie pokazanie okienko w które możemy wpisywać informacje-->
+	<p><input type="text" name="lastname" placeholder="Podaj swoje nazwisko"/></p> <!--Ta część skrytpu powoduje , że na stronie zostanie pokazanie okienko w którym możemy wpisywać informacje-->
+	<p><input type="email" name="email" placeholder="Podaj swój email"/></p><!--Ta część skryptu powoduje , że zostanie pokazanie okienko do wpisywaniu emaila-->
+	<p><textarea name="content" placeholder="Wpisz treść"></textarea></p>
+	<fieldset>
+		<legend>Twoja płeć</legend> 
+		<p><input type="radio" name="sex" value="k"/><span>Kobieta</span></p> <!--Ta część skryptu dodaje opcje wyboru jedenj z podanych opcji-->
+		<p><input type="radio" name="sex" value="m"/><span>Mężczyzna</span></p> <!--Ta część skryptu dodaje opcje wyboru jedenj z podanych opcji-->
+		<p><input type="radio" name="sex" value="n" checked="checked"/><span>Nieokreślona</span></p> <!--Ta część skryptu dodaje opcje wyboru jedenj z podanych opcji-->
+	</fieldset>
+	<button>Wyślij zapytanie</button> <!--Button powoduje , że informacje zostana wysłane do późniejszego wykorzystania-->
+</div>
+<div id="output">
+
+</div>
+
+<!--</form>-->

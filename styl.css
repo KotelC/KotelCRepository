@@ -1,0 +1,95 @@
+html, body {
+	margin: 0 !important; /*Ta część skryptu ustala odgórnie że margines posiada 0px*/
+	padding: 0 !important; /*Ta część skryptu ustala obramowanie wokół zawartości na 0px*/
+}
+
+#main {
+	display: grid;  /*Display grid pozwala nam ustalić że strona będzie robiona na siatce*/
+	grid-template-columns: 25vw auto 25vw; /*Ta cześć ustala 3 kolumny o szerokości 25 % całego viewporta , automatyczna która dostosowywuję się pomiedzy pierwszą kolumną oraz drugą o wymiarach 25% całego viewporta*/
+	grid-template-rows: 15vh 10vh 65vh 10vh; /*Ta część dzieli grida na 4 częsci o wysokości 15 % viewporta , 10% viewporta , 65 % viewporta oraz 10% viewporta*/
+}
+
+#logo {
+	background: green;
+	grid-row: 1;
+	grid-column: 1;
+}
+
+#title {
+	background: yellow;
+	grid-row: 1;
+	grid-column: 2;
+}
+
+#login {
+	background: orange;
+	grid-row: 1;
+	grid-column: 3;
+}
+
+#nav {
+	background: red;
+	grid-row: 2;
+	grid-column: 1 / 4;
+}
+
+#submenu {
+	background: blue;
+	grid-row: 3;
+	grid-column: 1;
+}
+
+#content {
+	background: gray;
+	grid-row: 3;
+	grid-column: 2;
+	display: block;
+	overflow-y: auto;
+	grid-template-columns: repeat(3, 1fr);
+}
+#col1 {
+	grid-column: 1;
+}
+
+#col2 {
+	grid-column: 2;
+}
+
+#foot {
+	background: lightgray;
+	grid-row: 4;
+	grid-column: 1 / 4;
+}
+
+.button {
+	position: relative;
+	z-index: 1;
+	
+	text-align: center;
+	border: solid yellow 1px;
+}
+
+.button::before { 
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	background: gray;
+}
+
+.button:hover {
+	cursor: pointer; /*Ten kawałek skryptu css powoduje ,że po najechaniu na element button na stronie kursor zmienia swój wygląd*/
+}
+
+
+.button:hover::before{ /*Ta część kodu ustawia że przycisk zanim w niego kilkniemy a najedziemy na niego będzie mieć przezroczystość o wartosci 0,6*/
+	opacity: 0.6;
+}
+
+figure.galeria img {
+	width: 100%;
+	height: auto;
+}
