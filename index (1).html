@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="utf-8"/>  <!--Meta charset określa jaki rodzaj kodowanie będzie używany na stronie w tym przypadku to utf-8-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!--Ta część kodu pozwala nam ustalić szerokość wyświetlanej strony na ekranie naszego użądzenia , oraz pozwala nam odgórnie określiś poziom przybliżenia na stronie-->
+		<meta name="keywords" content="podstawa, strona podstawowa, nauka"/> <!--Używając meta keyword możemy ustalić frazy po których nasza strona będzie wyszukiwana przez przeglądarke internetową-->
+		<meta name="description" content="To jest witryna przypominająca tworzenie stron WWW"/><!--Meta description pozwala nam ustalić opis strony jaki będzie się wyświetliać na panelu wyszukiwanie w wyszukiwarce na temat tej strony-->
+		<title>Strona przypomnienie</title> <!--Title pozwala nam ustalić tytuł strony pokazywany na pasku z aktywnymi stronami na danej przeglądarce-->
+		<link rel="stylesheet" href="css/styl.css"/> <!--Ta część kodu pozwala nam na połączenie pliku CSS z plikiem HTML-->
+		<script src="js/main.js"></script> <!--Ta część kodu pozwala nam połączyć kod HTML z kodem js (java script)-->
+		
+	</head>
+	<body>
+		<div id="main">
+			<div id="logo"></div> 
+			<div id="title"></div>
+			<div id="login"></div>
+
+			<div id="nav">
+			
+			</div>
+				
+			<div id="submenu">
+							
+				<div class="button" data-link="onas"><p>O nas</p></div> <!--Ten przycisk na stronie po kliknięciu odpowadza nas na podstronę pod nazwą onas.html-->
+				<div class="button" data-link="galeria"><p>Galeria</p></div><!--Ten przycisk na stronie po przyciśnięciu odpowadza nas do podstrony zatytułowanej galeria.html-->
+				<div class="button" data-link="kontakt"><p>Kontakt</p></div><!--Ten przycisk po nasiśnieciu przekierowywuje nas do strony kontakt.html-->
+			</div>
+			<div id="content">
+				<div id="col1">
+				<p>To jest akapit</p>
+				</div>
+				<div id="col2">
+				<p>To jest akapit</p>
+				</div>
+			</div>
+			
+			<div id="advert">
+				<p>To jest reklama</p>
+			</div>
+			<div id="foot">
+			
+			</div>
+		</div>
+		<script> 
+			addEvents()
+			setSite()
+		</script>
+	</body>
+</html>
